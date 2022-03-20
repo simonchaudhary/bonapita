@@ -1,0 +1,28 @@
+.sidebar__content {
+	width: 20vw;
+	height: 88vh;
+	background: white;
+	border-right: 1px solid rgb(235, 235, 235);
+	overflow-y: auto;
+}
+
+.sidebar__content .Item__container {
+	padding: 15px 15px;
+	/* border-bottom: 1px solid rgb(235, 235, 235); */
+	font-size: small;
+}
+
+.sidebar__content .Item__container:hover {
+	background: rgb(235, 235, 235);
+}
+
+.sidebar__content__select {
+	background: rgb(235, 235, 235);
+}
+
+@media only screen and (max-width: 480px) and (min-width: 100px) {
+	.sidebar__content .Item__container {
+		/* color: blue; */
+		font-size: 0.625rem;
+	}
+}

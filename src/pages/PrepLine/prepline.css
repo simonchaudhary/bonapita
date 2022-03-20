@@ -1,0 +1,144 @@
+.prepline {
+	/* width: 100vw; */
+	padding-bottom: 0.6rem;
+	/* padding: 0rem 0.25rem; */
+}
+
+.prepline__header {
+	position: sticky;
+	top: 0px;
+	z-index: 9;
+	background: #f5f5f5;
+	padding: 0.5rem 0rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 0.25rem;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.prepline__status {
+	flex: 1;
+	padding: 0.6rem 0rem;
+	text-align: center;
+	font-size: 0.875rem;
+	color: #d65a31;
+	font-weight: 600;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.prepline__status:not(:last-of-type) {
+	margin-right: 0.75rem;
+}
+
+/* Beautiful */
+.drag__row {
+	/* background: red; */
+	display: flex;
+	/* padding: 0.875rem; */
+	align-items: center;
+	justify-content: center;
+	margin: 0.75rem;
+}
+
+.drag__container {
+	/* flex: 1; */
+	width: 100%;
+	height: 100%;
+	padding: 0.5rem;
+	background: #f1f1f1;
+	white-space: nowrap;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.drag__container:not(:last-of-type) {
+	margin-right: 0.75rem;
+}
+
+.drag__con {
+	height: 300px;
+	min-height: 100%;
+	overflow-y: auto;
+	padding: 0px;
+}
+
+.drag__item {
+	width: 100%;
+	padding: 0.75rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	border-radius: 0.5rem;
+	margin-bottom: 0.75rem;
+	font-size: 0.75rem;
+}
+
+.order__Title {
+	font-size: 0.75rem;
+	color: #212121;
+	font-weight: 700;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/* mobile */
+@media only screen and (max-width: 480px) and (min-width: 100px) {
+	.prepline {
+		/* width: 100vw; */
+		/* padding: 0 0.25rem; */
+	}
+	.prepline * {
+		font-size: 0.625rem;
+		/* padding-bottom: 0.4rem; */
+	}
+	.prepline__header {
+		top: 50px;
+	}
+	.prepline__status {
+	}
+	.prepline__status:not(:last-of-type) {
+		margin-right: 0.25rem;
+	}
+
+	.drag__container {
+		margin-right: 0.2rem;
+		padding: 0rem;
+		border-radius: 0.25rem;
+	}
+	.drag__container:not(:last-of-type) {
+		margin-right: 0.25rem;
+	}
+	.drag__con {
+		padding: 0.25rem;
+	}
+	.drag__item {
+		padding: 0.25rem;
+		font-size: 0.675rem;
+		margin-bottom: 0.25rem;
+		border-radius: 0.25rem;
+	}
+	.drag__row {
+		margin: 0.25rem;
+	}
+}
+
+/* tablet */
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+	.prepline__status {
+	}
+}
+
+/* small screen laptop */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+	.prepline__status {
+	}
+}
+
+/* large screen desktop */
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+	.prepline__status {
+	}
+}

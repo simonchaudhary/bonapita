@@ -1,0 +1,74 @@
+.inputwrapper {
+	width: 100%;
+	/* background: red; */
+	margin-bottom: 0.5rem;
+}
+
+.inputwrapper .row {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	margin-bottom: 0.5rem;
+}
+
+.inputwrapper .label {
+	font-size: 0.75rem;
+	font-weight: 600;
+	color: #393e46;
+}
+
+.inputwrapper .error {
+	font-size: 0.75rem;
+	font-weight: 300;
+	color: #db714e;
+}
+
+.inputwrapper .input {
+	display: flex;
+	align-items: center;
+	background: white;
+	padding: 0 0.5rem;
+	border-radius: 0.4rem;
+	border: 0.5px solid #f3f3f3;
+}
+
+.inputwrapper .input .prefix__icon {
+	color: #e1896b;
+	/* display:flex;
+	align-items: center;
+	justify-content: center; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.inputwrapper .input .suffix__icon {
+	color: #e1896b;
+	/* display:flex;
+	align-items: center;
+	justify-content: center; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.inputwrapper .input input,
+select {
+	width: 100%;
+	border: none;
+	outline: none;
+	background: white;
+	padding: 0.75rem 0.5rem;
+}
+
+::placeholder {
+	color: #cccccc;
+	opacity: 1; /* Firefox */
+}
+
+@media only screen and (max-width: 480px) and (min-width: 100px) {
+	.inputwrapper * {
+		/* padding: 0.6rem; */
+		border-radius: 0.4rem;
+	}
+}
